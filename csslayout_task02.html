@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Flexbox: Task 2</title>
-    ​ ​
+
     <style>
       body {
         background-color: #fff;
@@ -13,25 +13,32 @@
         padding: 1em;
         margin: 0;
       }
-      ​ ul {
+      ul {
         max-width: 700px;
         list-style: none;
         padding: 0;
         margin: 0;
       }
-      ​ li {
+      li {
         background-color: #4d7298;
         border: 2px solid #77a6b6;
         border-radius: 0.5em;
         color: #fff;
         padding: 0.5em;
       }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+      li {
+        flex: 1;
+      }
     </style>
-    ​ ​ ​
   </head>
-  ​
+
   <body>
-    ​
     <ul>
       <li>I am small</li>
       <li>I have more content than the very small item.</li>
@@ -41,7 +48,5 @@
         situations where we end up with more words than expected!
       </li>
     </ul>
-    ​
   </body>
-  ​
 </html>
